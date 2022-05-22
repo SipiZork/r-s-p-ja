@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #414141;
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.wrapper .hide-interactions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+
+.wrapper .hide-interactions.hide {
+  display: none;
+}
+
+.wrapper .scores {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .25rem;
+  font-size: 4rem;
+}
+
+.wrapper .scores .ai-scores {
+  color: red;
+}
+
+.wrapper .scores p {
+  color: white;
+  line-height: 4rem;
+}
+
+.wrapper .scores .player-scores {
+  color: green;
+}
+
+.wrapper .left {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper .left .ai-chose {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 10rem;
+}
+
+.wrapper .left .ai-chose img {
+  border: 3px solid #636363;
+  height: 10rem;
+}
+
+.wrapper .right {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper .right .choose-wisely {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 10rem;
+}
+
+.wrapper .right .choose-wisely.chose {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.wrapper .right .choose-wisely .icon {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper .right .choose-wisely .icon.hide {
+  display: none;
+}
+
+.wrapper .right .choose-wisely .icon img {
+  border: 3px solid #636363;
+  height: 10rem;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.wrapper .right .choose-wisely .icon img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border-color: white;
+}
+/*# sourceMappingURL=index.css.map */

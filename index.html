@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script src="game.js" defer></script>
+  <title>Kő, papír, olló</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="hide-interactions hide"></div>
+    <div class="scores">
+      <div class="ai-scores">0</div>
+      <p>-</p>
+      <div class="player-scores">0</div>
+    </div>
+    <div class="left ai">
+      <div class="ai-chose">
+        <img class="ai-chose-img" src="assets/images/rock.png" alt="rock">
+      </div>
+    </div>
+    <div class="right player">
+      <div class="choose-wisely">
+        <div class="rock icon" data-strength="1">
+          <img src="./assets/images/rock.png" alt="rock">
+        </div>
+        <div class="scissors icon" data-strength="2">
+          <img src="./assets/images/scissors.png" alt="rock">
+        </div>
+        <div class="paper icon" data-strength="3">
+          <img src="./assets/images/paper.png" alt="rock">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
