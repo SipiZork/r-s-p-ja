@@ -91,6 +91,9 @@ const refreshScores = () => {
   }
   if (aiStrength > chosenStrength || (aiStrength === 1 && chosenStrength === 3)) {
     playerWin = true;
+  } 
+  if (aiStrength === 3 && chosenStrength === 1) {
+    playerWin = false;
   }
 
   if (!tie) {
